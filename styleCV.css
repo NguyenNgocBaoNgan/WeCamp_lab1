@@ -1,0 +1,600 @@
+.container{
+    width: 600px;
+    height: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Agency FB",Arial,sans-serif;
+    color: white;
+}
+/*chỉnh 2 bên */
+.left{
+    width:200px;
+    height: 1250px;
+    background-color: #112033;
+    float: left;
+}
+.right{
+    color: black;
+    width:400px;
+    height: 1250px;
+    background-color: #eae8eb;
+    float: right;
+}
+/*hình lục giác*/
+#hexagon {
+    width: 100px;
+    height: 55px;
+    background: white;
+    position: relative;
+    margin: 10px auto;
+}
+
+#hexagon:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid white;
+}
+
+#hexagon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid white;
+}
+/*chỉnh hình lục giác vào giữa*/
+.img{
+    margin-top: 50px;
+}
+/*chỉnh tên Joe*/
+.img h1{
+    padding-left: 36px;
+    padding-top: 10px;
+}
+ /*chỉnh tên dưới h1*/
+.img h3{
+    padding-left: 70px;
+    margin-top: -20px;
+}
+/********************************* phần profile ******************************/
+.profile{
+    width: 190px;
+    height: 200px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+
+}
+/*chỉnh lục giác thành hình nhỏ*/
+.hex {
+    /*margin-top: 34px;*/
+    width: 29px;
+    height: 19px;
+    background: white;
+    position: relative;
+    display:inline-block;
+    margin-right:5px;
+}
+.hex:before, .hex:after {
+    content:"";
+    border-left: 15px solid transparent;
+    border-right: 14px solid transparent;
+    position: absolute;
+}
+/*chỉnh hình lục giác nhỏ hơn nằm bên trong*/
+.hex:before {
+    top: -6px;
+    border-bottom: 6px solid white;
+}
+.hex:after {
+    bottom: -6px;
+    border-top: 6px solid white;
+}
+
+.hex.inner {
+    background-color:#112033;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:1;
+    position: relative;
+}
+.hex.inner:before {
+    border-bottom: 6px solid #112033;
+}
+.hex.inner:after {
+    border-top: 6px solid #112033;
+}
+/*chỉnh size cho icon*/
+.fa.fa-file-text-o{
+    position: absolute;
+    left: 8px;
+}
+/*chỉnh chữ profile*/
+.profile h3{
+    display:inline-block;
+    width:20px;
+}
+/*làm đường thẳng*/
+ .h_line{
+    display:inline-block;
+    border: 1px solid white;
+    width: 102px;
+    margin-left: 26px;
+    margin-bottom: 5px;
+}
+/*chỉnh văn bản*/
+.profile p{
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+/********************************* phần contact me ******************************/
+.contact_me{
+    width: 190px;
+    height: 247px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+}
+.contact_me h3{
+    display:inline-block;
+    width:79px;
+}
+.fa.fa-user-o{
+    position: absolute;
+    left: 8px;
+}
+.contact_me .h_line{
+    display:inline-block;
+    border: 1px solid white;
+    width: 70px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+}
+.hex_icon{
+    width: 29px;
+    height: 19px;
+    background: #112033;
+    position: relative;
+    display:inline-block;
+    margin-right:5px;
+}
+.hex_icon:before,.hex_icon:after {
+    content:"";
+    border-left: 15px solid transparent;
+    border-right: 14px solid transparent;
+    position: absolute;
+}
+.hex_icon:before {
+    top: -6px;
+    border-bottom: 6px solid #112033;
+}
+.hex_icon:after {
+    bottom: -6px;
+    border-top: 6px solid #112033;
+}
+.hex_icon.inner {
+    background-color:white;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:1;
+    position: relative;
+}
+.hex_icon.inner:before {
+    border-bottom: 6px solid white;
+}
+.hex_icon.inner:after {
+    border-top: 6px solid white;
+}
+/*chỉnh size cho icon*/
+.fa.fa-phone {
+    position: absolute;
+    left: 8px;
+    color: black;
+}
+.contact_me p{
+    display:inline-block;
+}
+.fa.fa-envelope {
+    position: absolute;
+    left: 7px;
+    color: black;
+}
+.fa.fa-globe{
+    position: absolute;
+    left: 7px;
+    color: black;
+}
+.website{
+    display: inline-block;
+    margin-left: 37px;
+    margin-top: -19px;
+}
+.fa.fa-map-marker{
+    position: absolute;
+    left: 8px;
+    color: black;
+}
+/*******************************phần personal skill****************************/
+.personal_skill{
+    width: 190px;
+    height: 248px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+}
+.fa.fa-file-text-o{
+    position: absolute;
+    left: 8px;
+}
+.fa.fa-user-circle{
+    position: absolute;
+    left: 7px;
+}
+.fa.fa-facebook{
+    position: absolute;
+    left: 9px;
+    color: black;
+}
+.fa.fa-twitter{
+    position: absolute;
+    left: 8px;
+    color: black;
+}
+/*chỉnh chữ profile*/
+.personal_skill h3{
+    display:inline-block;
+    width:89px;
+}
+/*làm đường thẳng*/
+.personal_skill .h_line{
+    display: inline-block;
+    border: 1px solid white;
+    width: 58px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+}
+/*chỉnh văn bản*/
+.personal_skill .describe{
+    width: 76px;
+    height: 150px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.ds{
+    height: 30px;
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.describe h4{
+    padding-left: 5px;
+    display:inline-block;
+}
+.statistic{
+    vertical-align:top;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+}
+.statistic ul {
+    list-style:none;
+    width:90%;
+    font-size:0;
+    padding: 0;
+    margin-top: 25px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+li {
+    display:inline-block;
+    width:48%;
+    height:7px;
+}
+li:nth-child(1) {
+    background:white;
+}
+li:nth-child(2) {
+    background:#112033;
+}
+
+/****************************************** phần right *****************************/
+.right .hex{
+    background-color: #112033;
+}
+.right .hex:before {
+    top: -6px;
+    border-bottom: 6px solid #112033;
+}
+.right .hex:after {
+    bottom: -6px;
+    border-top: 6px solid #112033;
+}
+
+.right .hex.inner {
+    background-color:#e6e6e8;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:1;
+    position: relative;
+}
+.right .hex.inner:before {
+    border-bottom: 6px solid #e6e6e8;
+}
+.right .hex.inner:after {
+    border-top: 6px solid #e6e6e8;
+}
+.work_experience{
+    width: 391px;
+    height: 440px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+    overflow:hidden;
+
+}
+.work_experience h3{
+    display:inline-block;
+    width:113px;
+}
+.fa.fa-briefcase{
+    position: absolute;
+    left: 7px;
+}
+.work_experience .h_line{
+    display:inline-block;
+    border: 1px solid #112033;
+    width: 207px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+}
+.work_experience .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #112033;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 14px;
+}
+.detail{
+    height: 100px;
+    width: 372px;
+}
+.detail h4{
+    display: inline-block;
+    vertical-align:top;
+    margin: 0px;
+    width: 300px;
+}
+.detail section p{
+    margin-left: 22px;
+    margin-top: 0;
+}
+/********************************* phần professional skill *******************************/
+.professional_skill{
+    width: 391px;
+    height: 150px;
+    margin: auto;
+    margin-left: 10px;
+    overflow:hidden;
+
+}
+.professional_skill h3{
+    display:inline-block;
+    width:113px;
+}
+.professional_skill .h_line{
+    display:inline-block;
+    border: 1px solid #112033;
+    width: 207px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+}
+.professional_skill .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #112033;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 14px;
+}
+.professional_skill .describe {
+    width: 90px;
+    height: 79px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.right li:nth-child(1) {
+    background:#112033;
+}
+.right li:nth-child(2) {
+    background:#e6e6e8;
+}
+.right .fa.fa-pie-chart{
+    position: absolute;
+    left: 8px;
+    color: #112033;
+}
+.c1,.c2{
+    width: 185px;
+    height:150px;
+    margin:0;
+    display: inline-block;
+    overflow:hidden;
+}
+.right .statistic{
+    width: 79px;
+}
+/****************************** phần education **********************/
+.education{
+    width: 391px;
+    height: 108px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+    overflow:hidden;
+
+}
+.education h3{
+    display:inline-block;
+    width:113px;
+}
+.education .h_line{
+    display: inline-block;
+    border: 1px solid #112033;
+    width: 252px;
+    margin-left: -49px;
+    margin-bottom: 5px;
+}
+.education .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #112033;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 14px;
+}
+/******************** phần Proficiency *********************/
+.proficiency{
+    width: 391px;
+    height: 210px;
+    margin: auto;
+    margin-left: 10px;
+    overflow:hidden;
+
+}
+.proficiency h3{
+    display:inline-block;
+    width:113px;
+}
+.proficiency .h_line{
+    display: inline-block;
+    border: 1px solid #112033;
+    width: 246px;
+    margin-left: -39px;
+    margin-bottom: 5px;
+}
+.proficiency .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #112033;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 14px;
+}
+.proficiency .describe {
+    width: 90px;
+    height: 79px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.right li:nth-child(1) {
+    background:#112033;
+}
+.right li:nth-child(2) {
+    background:#e6e6e8;
+}
+.right .fa.fa-pie-chart{
+    position: absolute;
+    left: 8px;
+    color: #112033;
+}
+.c1,.c2{
+    width: 185px;
+    height:150px;
+    margin:0;
+    display: inline-block;
+    overflow:hidden;
+}
+.right .statistic{
+    width: 79px;
+}
+/****************************** phần conncect ***************************/
+.connect{
+    width: 190px;
+    height: 248px;
+    margin: auto;
+    margin-left: 10px;
+    float: left;
+}
+.connect p{
+    display:inline-block;
+}
+.connect h3{
+    display:inline-block;
+    width:79px;
+}
+.connect .h_line{
+    display:inline-block;
+    border: 1px solid white;
+    width: 70px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+}
+.connect .describe{
+    width: 76px;
+    height: 150px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.connect.ds{
+    height: 30px;
+}
+.connect.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.connect.describe h4{
+    padding-left: 5px;
+    display:inline-block;
+}
+.connect.statistic{
+    vertical-align:top;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+}
+.connect.statistic ul {
+    list-style:none;
+    width:90%;
+    font-size:0;
+    padding: 0;
+    margin-top: 25px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.connect li {
+    display:inline-block;
+    width:48%;
+    height:7px;
+}
+.connect li:nth-child(1) {
+    background:white;
+}
+.connect li:nth-child(2) {
+    background:#112033;
+}
+.fa.fa-lightbulb-o{
+    position: absolute;
+    left: 9px;
+}
